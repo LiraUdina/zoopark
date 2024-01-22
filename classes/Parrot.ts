@@ -3,14 +3,13 @@ class Parrot extends Bird {
     isFlying = true
 
     constructor(name:string, health:string) {
-      super(name, health, true, ['plant']);
+      super(name, health, true, ['plant'] );
     }
   
-    repeat(target:Bird) {
+    repeat(target:Human) {
       console.log(`${this.name} повторяет за ${target.name}`);
     }
   }
   
-  const parrot = new Parrot("Попугай Кеша", ['plant']);
-  const sveta = new Parrot ("Светой", "good")
-  parrot.repeat(sveta);
+  const parrot = new Parrot("Попугай Кеша", "good");
+  parrot.repeat(hum);

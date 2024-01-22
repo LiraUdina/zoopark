@@ -8,6 +8,5 @@ class Parrot extends Bird {
         console.log(`${this.name} повторяет за ${target.name}`);
     }
 }
-const parrot = new Parrot("Попугай Кеша", ['plant']);
-const sveta = new Parrot("Светой", "good");
-parrot.repeat(sveta);
+const parrot = new Parrot("Попугай Кеша", "good");
+parrot.repeat(hum);

@@ -3,11 +3,10 @@ class Shark extends Fish {
       super(name, health, false, ['meat']);
     }
   
-    bite(target:Fish) {
+    byte(target:Chordate) {
       console.log(`${this.name} укусила ${target.name}`);
     }
   }
   
   const shark = new Shark("Акула", "bad");
-  const woman = new Shark("Девушку", "good");
-  shark.bite(woman);
+  shark.byte(upir);
